@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .main{
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+        }
+        .img{
+            background-image: url("./image-product-desktop.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:50vw;
+            height: 100vh;
+        }
+        
+        .container{
+            padding: 0px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            
+
+        }
+        .container h2{
+            color: grey;
+            line-height: 100px;
+            
+        }
+
+        .container h1{
+            font-size: 68px;
+            max-width: 400px;
+            line-height: 60px;
+
+        }
+        .container p{
+            padding-top: 40px;
+            color: grey;
+            font-size: 24px;
+            max-width: 500px;
+            line-height: 30px;
+
+        }
+        .price-div{
+            display: flex;
+            padding: 50px 0px;
+            column-gap: 50px;
+        }
+
+        .price1{
+            color: darkgreen;
+            font-size: 50px;
+            font-style: bold;
+        }
+        .price2{
+            padding-top: 10px;
+            color: gray;
+            font-size: 30px;
+            font-display: ;
+            text-decoration: line-through;
+        }
+        button{
+            background-color: darkgreen;
+            border: none;
+            width: 500px;
+            height: 60px;
+            border-radius: 15px;
+            color: white;
+            font-size: 20px;
+        }
+        @media (max-width:426px) {
+            
+            .main{
+                display: flex;
+                flex-direction:column;
+                align-items: center; 
+                justify-content: center; 
+                padding: 30px;
+                box-sizing:content-box;
+            }
+            .img{
+            background-image: url("./image-product-mobile.jpg");
+            background-repeat: no-repeat;
+            border-top-right-radius: 10px;
+            border-top-left-radius:10px ;
+            width:420px;
+            height:250px;
+        }
+            .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+                
+        }
+        .container h2{
+            color: grey;
+            line-height: 50px;        
+        }
+
+        .container h1{
+            font-size: 58px;
+            max-width: 400px;
+            line-height: 50px;
+        }
+        .container p{
+            padding-top: 40px;
+            color: grey;
+            font-size: 24px;
+            max-width: 500px;
+            line-height: 30px;
+        }
+        .price-div{
+            display: flex;
+            column-gap: 50px;
+        }
+
+        .price1{
+            color: darkgreen;
+            font-size: 50px;
+            font-style: bold;
+        }
+        .price2{
+            padding-top: 10px;
+            color: gray;
+            font-size: 30px;
+            text-decoration: line-through;
+        }
+        button{
+            background-color: darkgreen;
+            width: 400px;
+            height: 60px;
+            border-radius: 15px;
+            color: white;
+            font-size: 20px;
+            word-spacing: 10px;
+        }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img">
+        </div>
+        <div class="container">
+            <h2>PERFUME</h2>
+            <h1>Gabrielle Esscence Eau De Parfum</h1>
+            <p>A floral ipsum dolor sit, amet consectetur adipisicing elit. Ut deserunt obcaecati officia esse necessitatibus placeat for the HOUSE OF CHANEL</p>
+            <div class="price-div">
+            <div class="price1">$149.99</div>
+            <div class="price2">$169.99</div>
+            </div>
+            <button><img src="./icon-cart.svg" alt="icon"style="margin-right:10px" />Add to cart</button>
+        </div>
+    </div>
+
+</body>
+</html>
